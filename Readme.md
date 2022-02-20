@@ -13,12 +13,16 @@
 
 ## Getting Started
 
-Clone the repository and run the application with<br>
+1. Create a MongoDB.
+2. Clone the repository and run the application with<br>
 ```./gradlew bootRun -DCONNECTION_STRING=<YOUR MONGODB CONNECTION STRING>```
-
-All endpoints are documented and can be tried out with swagger: http://localhost:8080/swagger-ui.html
 
 ## Testing
 A postman collection is available: "Getting Started MongoDB.postman_collection.json".
 
 Unittests are available. They will be triggered through GitHub Actions after every push and for every pull request.
+
+## Solution Documentation
+The service was built following the clean architecture principle.
+
+All endpoints are documented and can be tried using swagger: ```http://localhost:<port>/swagger-ui.html```
