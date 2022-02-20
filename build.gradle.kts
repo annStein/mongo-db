@@ -9,6 +9,12 @@ plugins {
     kotlin("plugin.spring") version "1.6.10"
 }
 
+val jar by tasks.getting(Jar::class) {
+    manifest {
+        attributes["Main-Class"] = "com.nuwechallenge.mongo.MongoApplicationKt"
+    }
+}
+
 group = "com.nuwechallenge"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_11
