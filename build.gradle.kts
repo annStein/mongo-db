@@ -37,6 +37,10 @@ tasks.withType<KotlinCompile> {
     }
 }
 
+tasks.withType<org.springframework.boot.gradle.tasks.run.BootRun> {
+    systemProperties = System.getProperties().map { p -> Pair(p.key as String, p.value) }.toMap()
+}
+
 tasks.withType<Test> {
     useJUnitPlatform()
     testLogging {
