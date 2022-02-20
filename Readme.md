@@ -13,7 +13,8 @@
 
 ## Getting Started
 
-Clone the repository and run the application with ./gradlew bootRun.
+Clone the repository and run the application with<br>
+```./gradlew bootRun -DCONNECTION_STRING=<YOUR MONGODB CONNECTION STRING>```
 
 All endpoints are documented and can be tried out with swagger: http://localhost:8080/swagger-ui.html
 
